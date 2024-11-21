@@ -16,9 +16,14 @@
 	</nav>
 	{% if current_user.is_authenticated %}
 	<h1>You are logged in</h1>
-	<a href="/logout">Logout</a>
+	<div class="logout">
+		<div id="log">
+			<a href="/logout">Logout</a>
+		</div>
+	</div>
 	{% else %}
 	<h1>You are not logged in</h1>
 	{% endif %}
+	{% include 'footer.html' %}
 </body>
 </html>
